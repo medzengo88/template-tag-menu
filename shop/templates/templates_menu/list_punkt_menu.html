@@ -1,0 +1,12 @@
+{% regroup pods by punktmen__men__menu_name as pods_list %}
+{% regroup pods by punktmen__punkt_name as pods_list1 %}
+
+{% for g in pods_list %}
+    {% for d in pods_list1 %}
+        <p><b>{{ d.grouper }}</b></p>
+        {% for s in d.list %}
+            <ul>{{ s.podpunkt_name }}</ul>
+{% endfor %}
+{% endfor %}
+{% endfor %}
+<hr>

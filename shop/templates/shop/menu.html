@@ -1,0 +1,16 @@
+{% extends 'shop/base.html' %}
+{% load shop_tags %}
+
+{% block menu %}
+
+{% show_menu menu_slug %}
+
+{% endblock menu %}
+
+<hr>
+
+{% block menu1 %}
+
+{% draw_menu 'middle_menu' %}
+
+{% endblock menu1 %}
